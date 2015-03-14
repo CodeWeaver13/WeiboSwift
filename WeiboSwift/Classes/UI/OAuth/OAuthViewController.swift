@@ -56,8 +56,6 @@ extension OAuthViewController: UIWebViewDelegate {
     
     // 页面重定向
     func webView(webView: UIWebView, shouldStartLoadWithRequest request: NSURLRequest, navigationType: UIWebViewNavigationType) -> Bool {
-//        println(request.URL)
-        
         let result = continueWithCode(request.URL!)
         if let code = result.code {
             println("需要换token\(code)")

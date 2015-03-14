@@ -76,7 +76,6 @@ public class NetFramework {
         // 实例化网络请求
         if let requestIns = request(method, urlStr, params) {
             session!.dataTaskWithRequest(requestIns, completionHandler: { (data, _, error) -> Void in
-                println(requestIns)
                 if error != nil {
                     completion(result: nil, error: error)
                     return
@@ -141,7 +140,6 @@ public class NetFramework {
         let path = fullImageCachePath(urlStr)
         // 缓存检测，如果文件已下载则直接返回
         if NSFileManager.defaultManager().fileExistsAtPath(path) {
-            println("\(urlStr)图片已缓存")
             completion(result: nil, error: nil)
             return
         }

@@ -10,8 +10,8 @@ import Foundation
 
 ///  网络访问接口
 ///  用于隔离app和第三方框架之间的网络访问
+private let instance = NetManager()
 class NetManager {
-    private static let instance = NetManager()
     class var sharedManager: NetManager {
         return instance
     }

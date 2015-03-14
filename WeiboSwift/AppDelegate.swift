@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
+        
+        let abc = "abc"
+        println("\(abc.md5)")
+        
         if let token = AccessToken.loadAccessToken() {
             showMainInterface()
         } else {

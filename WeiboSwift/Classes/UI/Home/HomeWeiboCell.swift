@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeWeiboCell: UITableViewCell {
+    
     /// 头像
     @IBOutlet weak var iconView: UIImageView!
     /// 认证
@@ -88,15 +89,25 @@ class HomeWeiboCell: UITableViewCell {
         contentTextView.preferredMaxLayoutWidth = UIScreen.mainScreen().bounds.width - 30
         forwardTextView?.preferredMaxLayoutWidth = UIScreen.mainScreen().bounds.width - 30
     }
-
+    
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
     }
+    
+    /// 图片配选择的闭包
+    var photoDidSelected: ((model: WeiboModel, photoIndex: Int)-> ())?
 }
 
-extension HomeWeiboCell: UICollectionViewDataSource {
+extension HomeWeiboCell: UICollectionViewDataSource, UICollectionViewDelegate {
+    ///  cell被选中的方法
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        if self.photoDidSelected != nil {
+            self.photoDidSelected!(model: model!, photoIndex: indexPath.item)
+        }
+    }
+    
     func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return model?.picUrls?.count ?? 0
     }
@@ -108,12 +119,11 @@ extension HomeWeiboCell: UICollectionViewDataSource {
     }
     
     func calcPicViewSize() -> (itemSize: CGSize, viewSize: CGSize) {
-        let s: CGFloat = 90
+        let s: CGFloat = 75
         var itemSize = CGSizeMake(s, s)
         var viewSize = CGSizeZero
         
         let count = model?.picUrls?.count ?? 0
-        println("配图数量\(count)")
         
         if count == 0 {
             return (itemSize, viewSize)
@@ -128,7 +138,7 @@ extension HomeWeiboCell: UICollectionViewDataSource {
             }
         }
         
-        let m: CGFloat = 10
+        let m: CGFloat = 5
         if count == 4 {
             viewSize = CGSizeMake(s * 2 + m, s * 2 + m)
         } else {
@@ -146,7 +156,6 @@ class PicCell: UICollectionViewCell {
         didSet {
             let path = NetManager.sharedManager.fullImgCachePath(urlStr!)
             let image = UIImage(data: NSData(contentsOfFile: path)!)
-            println(path)
             imageView.image = image
         }
     }

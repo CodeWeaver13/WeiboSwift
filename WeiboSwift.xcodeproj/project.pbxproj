@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		CF1E8EEC1AA1536A0002B869 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E8EEB1AA1536A0002B869 /* AppDelegate.swift */; };
-		CF1E8F021AA1536A0002B869 /* WeiboSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF1E8F011AA1536A0002B869 /* WeiboSwiftTests.swift */; };
+		CF5EB1AD1AAF397C0099CFA4 /* MyRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5EB1AC1AAF397C0099CFA4 /* MyRefreshView.xib */; };
+		CF5EB1AF1AAF3A1A0099CFA4 /* MyRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5EB1AE1AAF3A1A0099CFA4 /* MyRefreshControl.swift */; };
 		CF81DDCD1AAADCD40040731A /* HomeWeiboCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF81DDCC1AAADCD40040731A /* HomeWeiboCell.swift */; };
 		CF81DDCF1AAAF8130040731A /* WeiboData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF81DDCE1AAAF8130040731A /* WeiboData.swift */; };
+		CF91956A1AACAC9A00BC143D /* PhotoBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF9195691AACAC9A00BC143D /* PhotoBrowserController.swift */; };
+		CF91956C1AACACA900BC143D /* PhotoBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF91956B1AACACA900BC143D /* PhotoBrowser.storyboard */; };
 		CFA8173D1AAA28DD00DB195B /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8173C1AAA28DD00DB195B /* MainTabBarController.swift */; };
 		CFA8A0D61AA9B6C4002A98B3 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFA8A0C41AA9B6C4002A98B3 /* Home.storyboard */; };
 		CFA8A0D71AA9B6C4002A98B3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0C51AA9B6C4002A98B3 /* HomeViewController.swift */; };
@@ -24,8 +27,8 @@
 		CFA8A0E41AA9BE83002A98B3 /* AccessTokenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E31AA9BE83002A98B3 /* AccessTokenTests.swift */; };
 		CFA8A0E51AA9BE88002A98B3 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0DF1AA9B819002A98B3 /* AccessToken.swift */; };
 		CFA8A0E71AA9BF1E002A98B3 /* NetFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E61AA9BF1E002A98B3 /* NetFramework.swift */; };
-		CFA8A0E91AA9C81F002A98B3 /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E81AA9C81F002A98B3 /* String+Hash.swift */; };
-		CFA8A0EA1AA9C921002A98B3 /* String+Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E81AA9C81F002A98B3 /* String+Hash.swift */; };
+		CFA8A0E91AA9C81F002A98B3 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E81AA9C81F002A98B3 /* Hash.swift */; };
+		CFA8A0EA1AA9C921002A98B3 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0E81AA9C81F002A98B3 /* Hash.swift */; };
 		CFA8A0ED1AA9CD6C002A98B3 /* NetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0EC1AA9CD6C002A98B3 /* NetManager.swift */; };
 		CFA8A0EF1AA9CEE2002A98B3 /* SwiftDict2Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0EE1AA9CEE2002A98B3 /* SwiftDict2Model.swift */; };
 		CFA8A0F11AA9D22A002A98B3 /* NetManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFA8A0F01AA9D22A002A98B3 /* NetManagerTests.swift */; };
@@ -62,9 +65,12 @@
 		CF1E8EEB1AA1536A0002B869 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF1E8EFB1AA1536A0002B869 /* WeiboSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeiboSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF1E8F001AA1536A0002B869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CF1E8F011AA1536A0002B869 /* WeiboSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeiboSwiftTests.swift; sourceTree = "<group>"; };
+		CF5EB1AC1AAF397C0099CFA4 /* MyRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyRefreshView.xib; sourceTree = "<group>"; };
+		CF5EB1AE1AAF3A1A0099CFA4 /* MyRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRefreshControl.swift; sourceTree = "<group>"; };
 		CF81DDCC1AAADCD40040731A /* HomeWeiboCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeWeiboCell.swift; sourceTree = "<group>"; };
 		CF81DDCE1AAAF8130040731A /* WeiboData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeiboData.swift; sourceTree = "<group>"; };
+		CF9195691AACAC9A00BC143D /* PhotoBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowserController.swift; sourceTree = "<group>"; };
+		CF91956B1AACACA900BC143D /* PhotoBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PhotoBrowser.storyboard; sourceTree = "<group>"; };
 		CFA8173C1AAA28DD00DB195B /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		CFA8A0C41AA9B6C4002A98B3 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		CFA8A0C51AA9B6C4002A98B3 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +88,7 @@
 		CFA8A0E11AA9BE30002A98B3 /* UserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		CFA8A0E31AA9BE83002A98B3 /* AccessTokenTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenTests.swift; sourceTree = "<group>"; };
 		CFA8A0E61AA9BF1E002A98B3 /* NetFramework.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetFramework.swift; sourceTree = "<group>"; };
-		CFA8A0E81AA9C81F002A98B3 /* String+Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Hash.swift"; sourceTree = "<group>"; };
+		CFA8A0E81AA9C81F002A98B3 /* Hash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
 		CFA8A0EB1AA9C956002A98B3 /* WeiboSwiftTests-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeiboSwiftTests-Bridge.h"; sourceTree = "<group>"; };
 		CFA8A0EC1AA9CD6C002A98B3 /* NetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetManager.swift; sourceTree = "<group>"; };
 		CFA8A0EE1AA9CEE2002A98B3 /* SwiftDict2Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDict2Model.swift; sourceTree = "<group>"; };
@@ -152,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				CF1E8EFF1AA1536A0002B869 /* Supporting Files */,
-				CF1E8F011AA1536A0002B869 /* WeiboSwiftTests.swift */,
 				CFA8A0E31AA9BE83002A98B3 /* AccessTokenTests.swift */,
 				CFA8A0F01AA9D22A002A98B3 /* NetManagerTests.swift */,
 				CFA8A10A1AA9F4D9002A98B3 /* OAuthViewControllerTests.swift */,
@@ -167,6 +172,15 @@
 				CFA8A0EB1AA9C956002A98B3 /* WeiboSwiftTests-Bridge.h */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF9195681AACAC6F00BC143D /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				CF91956B1AACACA900BC143D /* PhotoBrowser.storyboard */,
+				CF9195691AACAC9A00BC143D /* PhotoBrowserController.swift */,
+			);
+			path = PhotoBrowser;
 			sourceTree = "<group>";
 		};
 		CFA8A0BD1AA9B6C4002A98B3 /* Classes */ = {
@@ -194,7 +208,7 @@
 			children = (
 				CFA8A0E61AA9BF1E002A98B3 /* NetFramework.swift */,
 				CFA8A0EC1AA9CD6C002A98B3 /* NetManager.swift */,
-				CFA8A0E81AA9C81F002A98B3 /* String+Hash.swift */,
+				CFA8A0E81AA9C81F002A98B3 /* Hash.swift */,
 				CFA8A0EE1AA9CEE2002A98B3 /* SwiftDict2Model.swift */,
 			);
 			path = Tools;
@@ -203,6 +217,7 @@
 		CFA8A0C01AA9B6C4002A98B3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CF9195681AACAC6F00BC143D /* PhotoBrowser */,
 				CFA8A0C31AA9B6C4002A98B3 /* Home */,
 				CFA8A0C61AA9B6C4002A98B3 /* Main */,
 				CFA8A0C81AA9B6C4002A98B3 /* OAuth */,
@@ -238,6 +253,8 @@
 				CFA8A0C41AA9B6C4002A98B3 /* Home.storyboard */,
 				CFA8A0C51AA9B6C4002A98B3 /* HomeViewController.swift */,
 				CF81DDCC1AAADCD40040731A /* HomeWeiboCell.swift */,
+				CF5EB1AC1AAF397C0099CFA4 /* MyRefreshView.xib */,
+				CF5EB1AE1AAF3A1A0099CFA4 /* MyRefreshControl.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -392,6 +409,8 @@
 			files = (
 				CFA8A1091AA9EC47002A98B3 /* OAuth.storyboard in Resources */,
 				CFA8A0D61AA9B6C4002A98B3 /* Home.storyboard in Resources */,
+				CF5EB1AD1AAF397C0099CFA4 /* MyRefreshView.xib in Resources */,
+				CF91956C1AACACA900BC143D /* PhotoBrowser.storyboard in Resources */,
 				CFA8A0FF1AA9EADE002A98B3 /* Compose.storyboard in Resources */,
 				CFA8A0D91AA9B6C4002A98B3 /* Images.xcassets in Resources */,
 				CFA8A0FD1AA9EA8B002A98B3 /* Message.storyboard in Resources */,
@@ -420,9 +439,10 @@
 				CFA8A1051AA9EB5C002A98B3 /* ComposeViewController.swift in Sources */,
 				CF1E8EEC1AA1536A0002B869 /* AppDelegate.swift in Sources */,
 				CFA8173D1AAA28DD00DB195B /* MainTabBarController.swift in Sources */,
+				CF5EB1AF1AAF3A1A0099CFA4 /* MyRefreshControl.swift in Sources */,
 				CFA8A0EF1AA9CEE2002A98B3 /* SwiftDict2Model.swift in Sources */,
 				CFA8A0D81AA9B6C4002A98B3 /* OAuthViewController.swift in Sources */,
-				CFA8A0E91AA9C81F002A98B3 /* String+Hash.swift in Sources */,
+				CFA8A0E91AA9C81F002A98B3 /* Hash.swift in Sources */,
 				CFA8A1071AA9EB80002A98B3 /* DiscoverController.swift in Sources */,
 				CFA8A0F91AA9EA0E002A98B3 /* ProfileController.swift in Sources */,
 				CFA8A0ED1AA9CD6C002A98B3 /* NetManager.swift in Sources */,
@@ -434,6 +454,7 @@
 				CFA8A0E21AA9BE31002A98B3 /* UserInfo.swift in Sources */,
 				CF81DDCF1AAAF8130040731A /* WeiboData.swift in Sources */,
 				CF81DDCD1AAADCD40040731A /* HomeWeiboCell.swift in Sources */,
+				CF91956A1AACAC9A00BC143D /* PhotoBrowserController.swift in Sources */,
 				CFA8A1111AAA17AE002A98B3 /* MainTabBar.swift in Sources */,
 				CFA8A0E01AA9B819002A98B3 /* AccessToken.swift in Sources */,
 			);
@@ -445,11 +466,10 @@
 			files = (
 				CFA8A0F31AA9D246002A98B3 /* NetManager.swift in Sources */,
 				CFA8A10C1AA9F4F2002A98B3 /* OAuthViewController.swift in Sources */,
-				CF1E8F021AA1536A0002B869 /* WeiboSwiftTests.swift in Sources */,
 				CFA8A0F11AA9D22A002A98B3 /* NetManagerTests.swift in Sources */,
 				CFA8A0E41AA9BE83002A98B3 /* AccessTokenTests.swift in Sources */,
 				CFA8A10B1AA9F4D9002A98B3 /* OAuthViewControllerTests.swift in Sources */,
-				CFA8A0EA1AA9C921002A98B3 /* String+Hash.swift in Sources */,
+				CFA8A0EA1AA9C921002A98B3 /* Hash.swift in Sources */,
 				CFA8A0F21AA9D243002A98B3 /* NetFramework.swift in Sources */,
 				CFA8A0E51AA9BE88002A98B3 /* AccessToken.swift in Sources */,
 			);
@@ -552,6 +572,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "$(SRCROOT)/WeiboSwift/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -566,6 +588,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: quanlan huang (4W76M8MB3F)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: quanlan huang (4W76M8MB3F)";
 				INFOPLIST_FILE = "$(SRCROOT)/WeiboSwift/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -588,6 +612,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = WeiboSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeiboSwiftTests/WeiboSwiftTests-Bridge.h";
@@ -604,6 +629,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = WeiboSwiftTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "WeiboSwiftTests/WeiboSwiftTests-Bridge.h";

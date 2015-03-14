@@ -89,7 +89,6 @@ class OAuthViewControllerTests: XCTestCase {
     lazy var oauthVC: OAuthViewController? = {
         let bundle = NSBundle(forClass: OAuthViewControllerTests.self)
         let sb = UIStoryboard(name: "OAuth", bundle: bundle)
-//        println(bundle)
         return sb.instantiateInitialViewController() as? OAuthViewController
     }()
 }

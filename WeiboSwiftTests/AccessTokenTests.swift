@@ -22,11 +22,11 @@ class AccessTokenTests: XCTestCase {
     }
 
     func testIsExpired() {
-        var dict = ["access_token": "2.00ml8IrFcgjGyC3a36539d80SOuztB",
-        "expires_in": 1,
-        "remind_in": 157679999,
-        "uid": 5365823342]
-        var token = AccessToken(dict: dict)
+//        var dict = ["access_token": "2.00ml8IrFcgjGyC3a36539d80SOuztB",
+//        "expires_in": 1,
+//        "remind_in": 157679999,
+//        "uid": 5365823342]
+//        var token = AccessToken(dict: dict)
     }
 
     func testPerformanceExample() {

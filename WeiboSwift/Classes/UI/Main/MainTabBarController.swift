@@ -22,7 +22,6 @@ class MainTabBarController: UITabBarController {
         // 在 swift 中判断闭包的循环引用和 oc 中几乎是一样的，使用 deinit
         weak var weakSelf = self
         mainTabBar.composedButtonClicked = {
-            println("hello")
             // modal 撰写微博 视图控制器
             let sb = UIStoryboard(name: "Compose", bundle: nil)
             

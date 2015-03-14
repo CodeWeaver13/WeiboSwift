@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qy5-KG-pi4">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Qy5-KG-pi4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
     </dependencies>
@@ -20,7 +20,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3J-ic-cij" userLabel="间隙">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="10" id="dzV-XA-9pm"/>
                                             </constraints>
@@ -52,7 +52,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="PK9-Cw-fSb"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0l-h0-tSR" userLabel="时间">
@@ -67,24 +67,24 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blc-SQ-aDq" userLabel="来源">
                                             <rect key="frame" x="88" y="43" width="29" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="smL-ib-Xc5" userLabel="正文">
-                                            <rect key="frame" x="8" y="61" width="38" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="8" y="61" width="40" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YMI-UC-XpY" userLabel="配图">
-                                            <rect key="frame" x="8" y="87" width="290" height="90"/>
-                                            <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="8" y="89" width="290" height="75"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="90" id="F3n-ix-LAZ"/>
+                                                <constraint firstAttribute="height" constant="75" id="F3n-ix-LAZ"/>
                                                 <constraint firstAttribute="width" constant="290" id="fQr-av-vcQ"/>
                                             </constraints>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wG3-hg-1Ig">
-                                                <size key="itemSize" width="90" height="90"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="wG3-hg-1Ig">
+                                                <size key="itemSize" width="75" height="75"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -94,11 +94,11 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mg6-JL-leo">
-                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mg6-JL-leo">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -116,10 +116,11 @@
                                             </cells>
                                             <connections>
                                                 <outlet property="dataSource" destination="TZw-fq-MAk" id="qpH-KF-H0X"/>
+                                                <outlet property="delegate" destination="TZw-fq-MAk" id="DJr-dF-BAU"/>
                                             </connections>
                                         </collectionView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1bc-QA-0hh" userLabel="底部按钮视图">
-                                            <rect key="frame" x="0.0" y="185" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="187" width="600" height="44"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P4U-2V-p6N" userLabel="转发">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
@@ -128,7 +129,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="转发" image="timeline_icon_retweet" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -136,7 +137,7 @@
                                                     <rect key="frame" x="200" y="0.0" width="200" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="评论" image="timeline_icon_comment" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -144,7 +145,7 @@
                                                     <rect key="frame" x="400" y="0.0" width="200" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="赞" image="timeline_icon_unlike" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -194,7 +195,7 @@
                                         <constraint firstItem="blc-SQ-aDq" firstAttribute="leading" secondItem="t0l-h0-tSR" secondAttribute="trailing" constant="8" id="BZQ-cF-fn4"/>
                                         <constraint firstItem="aRC-YJ-Oac" firstAttribute="leading" secondItem="epK-ej-9pJ" secondAttribute="trailing" constant="8" id="KK1-fv-RG7"/>
                                         <constraint firstItem="3Bz-6T-LHp" firstAttribute="bottom" secondItem="epK-ej-9pJ" secondAttribute="bottom" constant="5" id="M7l-N9-OzU"/>
-                                        <constraint firstItem="1bc-QA-0hh" firstAttribute="top" secondItem="YMI-UC-XpY" secondAttribute="bottom" constant="8" id="Or4-Ai-iNS"/>
+                                        <constraint firstItem="1bc-QA-0hh" firstAttribute="top" secondItem="YMI-UC-XpY" secondAttribute="bottom" constant="23" id="Or4-Ai-iNS"/>
                                         <constraint firstItem="CcM-ji-pnb" firstAttribute="centerY" secondItem="aRC-YJ-Oac" secondAttribute="centerY" constant="-1.5" id="PEX-mq-7XM"/>
                                         <constraint firstItem="epK-ej-9pJ" firstAttribute="top" secondItem="M3J-ic-cij" secondAttribute="bottom" constant="8" id="PRc-Fe-WZp"/>
                                         <constraint firstItem="t0l-h0-tSR" firstAttribute="leading" secondItem="epK-ej-9pJ" secondAttribute="trailing" constant="8" id="TzB-Ev-p2f"/>
@@ -232,7 +233,7 @@
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ef1-6t-C3H" userLabel="间隙">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="10"/>
-                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="10" id="Lrx-nZ-qqz"/>
                                             </constraints>
@@ -264,7 +265,7 @@
                                                 <constraint firstAttribute="height" constant="17" id="WvF-iK-JgY"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cS2-sq-FDY" userLabel="时间">
@@ -279,37 +280,37 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhA-zH-Cdi" userLabel="来源">
                                             <rect key="frame" x="88" y="43" width="29" height="14"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn2-DH-eAX" userLabel="正文">
-                                            <rect key="frame" x="8" y="61" width="38" height="18"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="8" y="61" width="40" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8N7-VJ-uLC" userLabel="转发微博背景">
-                                            <rect key="frame" x="0.0" y="87" width="600" height="123"/>
-                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <rect key="frame" x="0.0" y="89" width="600" height="117"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="sRGB"/>
                                             <state key="normal">
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="titleShadowColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </state>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jn8-3w-ZKh" userLabel="转发微博文字">
-                                            <rect key="frame" x="8" y="95" width="36" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <rect key="frame" x="8" y="97" width="38" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Wg0-va-HMv" userLabel="配图">
-                                            <rect key="frame" x="8" y="120" width="290" height="90"/>
-                                            <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                            <rect key="frame" x="8" y="123" width="290" height="75"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="290" id="YDh-kG-ALF"/>
-                                                <constraint firstAttribute="height" constant="90" id="lei-4J-Lbw"/>
+                                                <constraint firstAttribute="height" constant="75" id="lei-4J-Lbw"/>
                                             </constraints>
-                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GRX-pJ-Q25">
-                                                <size key="itemSize" width="90" height="90"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="GRX-pJ-Q25">
+                                                <size key="itemSize" width="75" height="75"/>
                                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -319,11 +320,11 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N16-HU-Wv5">
-                                                                <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N16-HU-Wv5">
+                                                                <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -341,10 +342,11 @@
                                             </cells>
                                             <connections>
                                                 <outlet property="dataSource" destination="jUa-eL-B5m" id="Xfp-Mf-eAH"/>
+                                                <outlet property="delegate" destination="jUa-eL-B5m" id="9Sa-db-Ykp"/>
                                             </connections>
                                         </collectionView>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ae8-d1-tVS" userLabel="底部按钮视图">
-                                            <rect key="frame" x="0.0" y="218" width="600" height="44"/>
+                                            <rect key="frame" x="0.0" y="214" width="600" height="44"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9F-Fk-bm5" userLabel="转发">
                                                     <rect key="frame" x="0.0" y="0.0" width="200" height="44"/>
@@ -353,7 +355,7 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="转发" image="timeline_icon_retweet" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -361,7 +363,7 @@
                                                     <rect key="frame" x="200" y="0.0" width="200" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="评论" image="timeline_icon_comment" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -369,7 +371,7 @@
                                                     <rect key="frame" x="400" y="0.0" width="200" height="44"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <state key="normal" title="赞" image="timeline_icon_unlike" backgroundImage="timeline_card_bottom_background">
-                                                        <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                 </button>
@@ -413,7 +415,7 @@
                                     <constraints>
                                         <constraint firstItem="ae8-d1-tVS" firstAttribute="top" secondItem="8N7-VJ-uLC" secondAttribute="bottom" constant="8" id="04d-1g-nrx"/>
                                         <constraint firstAttribute="trailing" secondItem="ae8-d1-tVS" secondAttribute="trailing" id="3Ld-kn-uAG"/>
-                                        <constraint firstItem="8N7-VJ-uLC" firstAttribute="bottom" secondItem="Wg0-va-HMv" secondAttribute="bottom" id="56v-Vs-dwH"/>
+                                        <constraint firstItem="8N7-VJ-uLC" firstAttribute="bottom" secondItem="Wg0-va-HMv" secondAttribute="bottom" constant="8" id="56v-Vs-dwH"/>
                                         <constraint firstItem="cS2-sq-FDY" firstAttribute="leading" secondItem="alM-vw-3pF" secondAttribute="trailing" constant="8" id="724-5c-ftD"/>
                                         <constraint firstItem="ae8-d1-tVS" firstAttribute="leading" secondItem="yw4-fn-d3E" secondAttribute="leading" id="8Yo-bU-NJ3"/>
                                         <constraint firstAttribute="trailing" secondItem="Ef1-6t-C3H" secondAttribute="trailing" id="AcM-tp-FXR"/>
@@ -464,6 +466,12 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="首页" id="0Fq-NQ-HpT"/>
+                    <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="pa1-mX-86x" customClass="MyRefreshControl" customModule="WeiboSwift" customModuleProvider="target">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <connections>
+                            <action selector="loadData" destination="4NY-wH-W6k" eventType="valueChanged" id="bMz-Kb-qKa"/>
+                        </connections>
+                    </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sEX-np-uTe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

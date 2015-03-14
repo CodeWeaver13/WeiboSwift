@@ -16,7 +16,6 @@ class AccessToken: NSObject, NSCoding {
     var expires_in: NSNumber? {
         didSet {
             expiresDate = NSDate(timeIntervalSinceNow: expires_in!.doubleValue)
-            println("过期日期 \(expiresDate)")
         }
     }
     /// 过期日期

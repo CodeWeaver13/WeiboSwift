@@ -12,8 +12,15 @@ import UIKit
 private let WB_Home_Timeline_URL = "https://api.weibo.com/2/statuses/home_timeline.json"
 
 class WeiboPicURL: NSObject {
-    ///  缩略图
-    var thumbnail_pic: String?
+    /// 大图的URL
+    var large_pic: String?
+    /// 通过缩略图的URL设置大图URL
+    var thumbnail_pic: String? {
+        didSet {
+            var str = thumbnail_pic! as NSString
+            large_pic = str.stringByReplacingOccurrencesOfString("thumbnail", withString: "large")
+        }
+    }
 }
 
 ///  微博Cell模型
@@ -40,10 +47,19 @@ class WeiboModel: NSObject, Dict2ModelProtocol {
     var pic_urls: [WeiboPicURL]?
     ///  外部调用的图片数组，如果是原创微博，使用pic_urls，如果是转发的用retweeted_status?.pic_urls
     var picUrls: [WeiboPicURL]? {
-        if retweeted_status != nil {
-            return retweeted_status?.pic_urls
-        } else {
-            return pic_urls
+        get {
+            if retweeted_status != nil {
+                return retweeted_status?.pic_urls
+            } else {
+                return pic_urls
+            }
+        }
+    }
+    /// 所有大图
+    var largeUrls: [String]? {
+        get {
+            var urls = self.valueForKeyPath("picUrls.large_pic") as? NSArray
+            return urls as? [String]
         }
     }
     
@@ -70,10 +86,11 @@ class WeiboData: NSObject, Dict2ModelProtocol {
     ///  加载微博数据
     ///  当加载成功时，进行字典转模型，并回调转换后的模型
     ///  :param: completion 回调
-    class func loadData(completion: (data: WeiboData?, error: NSError?)-> ()) {
+    class func loadData(maxId: Int = 0, completion: (data: WeiboData?, error: NSError?)-> ()) {
         let net = NetManager.sharedManager
         if let token = AccessToken.loadAccessToken()?.access_token {
-            let params = ["access_token": token]
+            let params = ["access_token": token,
+                "max_id": "\(maxId)"]
             
             net.requestJSON(.GET, WB_Home_Timeline_URL, params) { (result, error) -> () in
                 if error != nil {
@@ -90,7 +107,6 @@ class WeiboData: NSObject, Dict2ModelProtocol {
                         completion(data: model, error: nil)
                     }
                 } else {
-                    println(model)
                     completion(data: model, error: nil)
                 }
             }
